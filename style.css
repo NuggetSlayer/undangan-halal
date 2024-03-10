@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@font-face {
+    font-family: 'Hidayatullah';
+    /* You can name it whatever you want */
+    src: url('Asset/hidayatullah\ DEMO.ttf') format('truetype');
+    /* Adjust the path and format based on your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+}
+body{
+    background-image: url('Asset/doodad.png');
+    background-position: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.show {
+    animation: show 0.6s ease-in-out;
+}
+
+.vanish {
+    animation: hider 0.8s ease-in-out;
+}
+
+
+/* Hero section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#lantern-1,#lantern-2{
+    position: absolute;
+    width: 200px;
+}
+#lantern-1{
+    top: 0;
+    left: 0;
+    width: 180px;
+}
+#lantern-2{
+    top: 0;
+    right: 0px;
+}
+ #ornament-1,#ornament-2{
+    position: absolute;
+    width: 180px;
+    z-index: -1;
+}
+ #ornament-1{
+    left: 0;
+    bottom: 0;
+}
+ #ornament-2{
+    right: 0;
+    bottom: 0;
+}
+
+.hero-text h3 {
+    font-weight: normal;
+    font-family: 'Hidayatullah';
+    font-size: clamp(14px, 5vw, 30px);
+    color: #fff;
+    margin: 0;
+}
+
+.hero-text h1 {
+    font-size: clamp(40px, 13vw, 110px);
+    font-weight: lighter;
+    font-family: 'Hidayatullah';
+    color: #ffb300;
+}
+
+
+.hero-text .hero-box {
+    font-size: clamp(14px, 2vw, 18px);
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero-box p {
+    color: #fff;
+}
+
+.hero-text button {
+    font-size: clamp(11px, 2vw, 16px);
+    padding: 15px 25px;
+    /* Keep padding values constant */
+    background-color: #192639;
+    border-radius: 20px;
+    box-shadow: 0px 0px 18px 0px #fff;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.hero-text button:hover {
+    background-color: #fff;
+    color: #393939;
+}
+
+.hero-text-2 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-top: 170px;
+    align-items: center;
+    color: #fff;
+    padding: 0 25px;
+    text-align: center;
+}
+.hero-text-2 h1{
+    font-size: clamp(30px, 13vw, 80px);
+    font-weight: lighter;
+    margin: 0;
+    font-family: 'Hidayatullah';
+    color: #ffb300;
+}
+.hero-text-2 h3 {
+    font-size: clamp(20px, 6vw, 50px);
+    font-weight: lighter;
+    margin: 0;
+    font-family: 'Hidayatullah';
+    color: #fff;
+    margin-top: 10px;
+}
+.hero-text-2 p{
+    font-weight: lighter;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+}
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.date h1{
+    font-family: 'Quicksand';
+    font-size: 30px;
+    font-weight: 700;
+}
+.date-hour{
+    border-left: 5px solid #ffb300;
+    padding: 0 10px;
+}
+.date-hour p{
+    text-align: start;
+    font-size: 20px;
+}
+
+.countdown-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.countdown-box {    
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb300;
+    color: #fff;
+    text-align: center;
+    font-size: clamp(14px, 2vw, 16px);
+    border-radius: 8px;
+}
+.countdown-item{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* .hero-text-2 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 30px;
+}
+.hero-text-2 ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 6px 25px;
+    border-radius: 20px;
+    background-color: #ffb300;
+    text-align: center;
+}
+.hero-text-2 ul li p{
+    color: #393939;
+    font-size: 17px;
+    font-weight: bold;
+} */
+
+/* Surat Section */
+.surat-section {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5vw;
+}
+
+.surat-section img {
+    width: clamp(20px, 40vw, 200px);  /* Adjust the min, preferred, and max values accordingly */
+    position: absolute;
+}
+
+.surat-text {
+    padding: 0 5vw;
+    text-align: center;
+    font-weight: normal;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: rgba(25, 38, 57, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+}
+
+.surat-text h2 {
+    font-family: "Hidayatullah";
+    color: #ffb300;
+    font-size: clamp(16px, 4vw, 36px);  /* Adjust the min, preferred, and max values accordingly */
+}
+
+.surat-text h5 {
+    letter-spacing: -0.5px;
+    margin: 0;
+    margin-top: 5px;
+    font-size: clamp(14px, 2vw, 28px);  /* Adjust the min, preferred, and max values accordingly */
+}
+
+.surat-text p {
+    margin-top: 20px;
+    font-size: clamp(14px, 2vw, 24px);  /* Adjust the min, preferred, and max values accordingly */
+}
+
+/* Map Section */
+.map-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 5vw;
+    margin-bottom: 30px;
+}
+
+.map-section iframe {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;  /* Set your desired max-width for the iframe */
+}
+
+.map-section h1 {
+    margin-top: 20px;
+    color: #ffb300;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: clamp(20px, 5vw, 48px);  /* Adjust the min, preferred, and max values accordingly */
+}
+
+.map-section h2 {
+    margin-top: 20px;
+    color: #ffb300;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: clamp(18px, 4vw, 36px);  /* Adjust the min, preferred, and max values accordingly */
+}
+
+.map-section p {
+    color: #fff;
+    text-align: center;
+    font-size: clamp(14px, 2vw, 24px);  /* Adjust the min, preferred, and max values accordingly */
+}
+
+#rute{
+    background-color: #ffb300;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+/* Animation */
+
+@keyframes hider {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-8rem);
+        display: none;
+    }
+}
+
+@keyframes show {
+    from {
+        display: none;
+        opacity: 0;
+        transform: translateY(-8rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        display: static;
+    }
+}
