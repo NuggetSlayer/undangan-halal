@@ -149,6 +149,13 @@ body{
     color: #fff;
     margin-top: 10px;
 }
+.hero-text-2 i{
+    margin-top: clamp(33px, 25vw, 85px); /* Adjust the values based on your preference */
+    font-size: clamp(20px, 9vw, 50px);
+    color: #192639;
+    animation: blink 1.5s infinite ease-in-out; /* Adjust the duration of the blink */
+}
+
 .hero-text-2 p{
     font-weight: lighter;
     margin: 0;
@@ -327,6 +334,123 @@ body{
     padding: 12px 30px;
     border-radius: 20px;
     margin-top: 10px;
+}
+
+
+/* Gift Section */
+.gift-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin:  100px 0 120px 0;
+    position: relative;
+    color: #fff;
+}
+
+.gift-section img {
+    position: absolute;
+    width: 60%;
+    bottom: -8px;
+    left: -5%;
+    z-index: 0;
+}
+
+.gift-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.gift-card-container h1 {
+    color: #ffb300;
+    font-family: 'Hidayatullah';
+}
+
+.gift-card-container h5 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+
+.gift-card-container h4 {
+    text-align: left;
+    font-size: 10px;
+    padding: 0 15px;
+    color: #fff;
+
+}
+
+.gift-card-container button {
+    width: 90%;
+    background-color: #ffb300;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.gift-card {
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background: rgba(25, 38, 57, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    color: #393939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.gift-card p {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.gift-card p:nth-child(1) {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.account-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gift-card button {
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ffb300;
+}
+
+@keyframes blink {
+    0% {
+        color: #192639; /* Start color (red) */
+    }
+    50% {
+        color: #ffb300; /* End color (red) */
+    }
+    100%{
+        color: #192639;
+    }
 }
 
 /* Animation */
