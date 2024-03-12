@@ -30,6 +30,42 @@ document.getElementById('hideButton').addEventListener('click', function () {
     backgroundMusic.play();
 });
 
+
+document.getElementById('copyBRI').addEventListener('click', function () {
+    // Get the text you want to copy
+    var textToCopy = "000701118117509";
+
+    // Create a temporary input element
+    var tempInput = document.createElement('input');
+    tempInput.value = textToCopy;
+
+    // Append the input element to the body
+    document.body.appendChild(tempInput);
+
+    // Select the text inside the input element
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999); /* For mobile devices */
+
+    // Copy the selected text to the clipboard
+    document.execCommand('copy');
+
+    // Remove the temporary input element
+    document.body.removeChild(tempInput);
+    window.alert('Copied To Clipboard');
+});
+document.getElementById('whatsappButton').addEventListener('click', function () {
+  let phoneNumber = '6285776334827';
+
+  // You can customize the message by appending it to the URL
+  let message = encodeURIComponent('Saya ingin mengirim bukti transfer (foto)');
+
+  // Create the WhatsApp link
+  let whatsappLink = 'whatsapp://send?phone=' + phoneNumber + '&text=' + message;
+
+  // Open the link in a new tab or the same tab, depending on your requirements
+  window.location.href = whatsappLink;
+});
+
 // document.addEventListener('DOMContentLoaded', function () {
 //     // Set the countdown date (replace with your desired date)
 //     const countdownDate = new Date('March 14, 2024 13:00:00').getTime();
