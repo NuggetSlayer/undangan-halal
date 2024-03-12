@@ -340,7 +340,7 @@ body{
 /* Gift Section */
 .gift-section {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 100%;
     margin:  100px 0 120px 0;
@@ -440,6 +440,27 @@ body{
     padding: 10px 20px;
     background-color: #ffb300;
 }
+
+/* Music */
+#backgroundMusic {
+    visibility: hidden;
+    height: 0;
+}
+
+
+#toggleMusicButton {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 5;
+    background-color: #192639;
+    padding: 12px 18px;
+    border: 2px solid #ffb300;
+    border-radius: 15px;
+    color: #ffb300;
+    font-family: "Hidayatullah";
+}
+
 
 @keyframes blink {
     0% {
