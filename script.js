@@ -25,9 +25,22 @@ document.getElementById('hideButton').addEventListener('click', function () {
         }, { once: true });
     });
 
-    var cutTime = 15; // Adjust this value based on your requirement
+    var cutTime = 36; // Adjust this value based on your requirement
     backgroundMusic.currentTime = cutTime;
     backgroundMusic.play();
+});
+
+let backgroundMusic = document.getElementById('backgroundMusic');
+let toggleMusicButton = document.getElementById('toggleMusicButton');
+
+toggleMusicButton.addEventListener('click', function () {
+  if (backgroundMusic.paused) {
+    backgroundMusic.play();
+    toggleMusicButton.textContent = 'Pause Music';
+  } else {
+    backgroundMusic.pause();
+    toggleMusicButton.textContent = 'Play Music';
+  }
 });
 
 
